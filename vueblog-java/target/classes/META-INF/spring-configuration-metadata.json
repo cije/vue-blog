@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "name": "ce.jwt",
+      "type": "com.ce.utils.JwtUtils",
+      "sourceType": "com.ce.utils.JwtUtils"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ce.jwt.expire",
+      "type": "java.lang.Long",
+      "sourceType": "com.ce.utils.JwtUtils",
+      "defaultValue": 0
+    },
+    {
+      "name": "ce.jwt.header",
+      "type": "java.lang.String",
+      "sourceType": "com.ce.utils.JwtUtils"
+    },
+    {
+      "name": "ce.jwt.secret",
+      "type": "java.lang.String",
+      "sourceType": "com.ce.utils.JwtUtils"
+    }
+  ],
+  "hints": []
+}

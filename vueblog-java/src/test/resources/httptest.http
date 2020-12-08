@@ -1,0 +1,54 @@
+### index
+GET http://localhost:8080/user/index
+Accept: application/json
+
+### save
+POST http://localhost:8080/user/save
+Content-Type: application/json
+
+{
+  "username": "123",
+  "email": "ss"
+}
+
+### login
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "username": "an37500",
+  "password": "111111"
+}
+
+### logout
+GET http://localhost:8080/logout
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjA3MjQ2OTQ5LCJleHAiOjE2MDc4NTE3NDl9.YURx0LeNvJ9kfoZib-bCNG9FzH1mHOsIkSIPsZKRqDZ1QmxYeRZewjjh_CNi_czA60GH7QY3tgpj4IjiV74_2Q
+
+### blogs
+GET http://localhost:8080/blog/list
+
+### blog get one
+GET http://localhost:8080/blog/11
+
+### add
+POST http://localhost:8080/blog/edit
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjA3MjQ2OTQ5LCJleHAiOjE2MDc4NTE3NDl9.YURx0LeNvJ9kfoZib-bCNG9FzH1mHOsIkSIPsZKRqDZ1QmxYeRZewjjh_CNi_czA60GH7QY3tgpj4IjiV74_2Q
+Content-Type: application/json
+
+{
+  "title": "第二条数据",
+  "description": "第二条",
+  "content": "第二条数据内容测试"
+}
+### edit
+POST http://localhost:8080/blog/edit
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjA3MjQ2OTQ5LCJleHAiOjE2MDc4NTE3NDl9.YURx0LeNvJ9kfoZib-bCNG9FzH1mHOsIkSIPsZKRqDZ1QmxYeRZewjjh_CNi_czA60GH7QY3tgpj4IjiV74_2Q
+Content-Type: application/json
+
+{
+  "id": 12,
+  "userId": 1,
+  "title": "第二条修改",
+  "description": "第二条修改",
+  "content": "第二条数据内容修改测试"
+}
